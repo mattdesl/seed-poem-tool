@@ -1,0 +1,45 @@
+{
+  "name": "seed-poem-tool",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ethersproject/wallet": "^5.6.0",
+    "bip39-light": "^1.0.7",
+    "browserify-zlib": "^0.2.0",
+    "bs58check": "^2.1.2",
+    "buffer": "^6.0.3",
+    "canvas-sketch": "^0.7.5",
+    "canvas-sketch-util": "^1.10.0",
+    "eases": "^1.0.8",
+    "euclidean-distance": "^1.0.0",
+    "events": "^3.3.0",
+    "fastclick": "^1.0.6",
+    "gl-matrix": "^3.4.3",
+    "libsodium-wrappers-sumo": "^0.7.9",
+    "pathfinding": "^0.4.18",
+    "pos-tag": "^2.2.2",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "vite-plugin-singlefile": "^0.6.3"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "canvas-sketch-cli": "^1.11.15",
+    "svelte": "^3.44.0",
+    "vite": "^2.8.0"
+  }
+}
