@@ -8,6 +8,14 @@ Each word in the poem must be present in the [fixed list of 2048 words](https://
 
 _Note:_ This is an experiment in constrained poetry, and not a secure method to store private keys.
 
+### live demo
+
+:sparkles:
+
+You can see a live version of the app here:
+
+https://seed-poem-tool.netlify.app/
+
 ### default poem
 
 The default poem for the app is a 12-word haiku that is also a valid seed phrase:
@@ -54,10 +62,6 @@ If you run into an error with `"path"` module you may need to make sure that `no
 
 (Yes, it's clunky...)
 
-### live demo
+# License
 
-:sparkles:
-
-You can see a live version of the app here:
-
-https://seed-poem-tool.netlify.app/
+The code here is MIT, see [LICENSE.md](./LICENSE.md). Some third-party dependencies and fonts have been included under the `src/` folder that may carry different licenses.
