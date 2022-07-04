@@ -5,7 +5,7 @@ import App from "./App.svelte";
 //   createEthereumWallet,
 //   createTezosWallet,
 //   validateMnemonic,
-// } from "./wallet";
+// } from "./util/wallet.bundled.js";
 
 // (async () => {
 //   const expected = {

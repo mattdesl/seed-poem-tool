@@ -1,10 +1,4 @@
 <script>
-  import {
-    mnemonicToSeed,
-    generateMnemonic,
-    wordlists,
-    validateMnemonic,
-  } from "bip39-light";
   import { onMount } from "svelte";
 
   import RND from "canvas-sketch-util/random";
@@ -12,8 +6,11 @@
   
   import {
     createTezosWallet,
-    createEthereumWallet
-  } from './wallet.js';
+    createEthereumWallet,
+    generateMnemonic,
+    validateMnemonic,
+    wordlists
+  } from './util/wallet.bundled.js';
 
   let poem = `caught under bamboo breeze
 gentle summer melody

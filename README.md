@@ -10,6 +10,8 @@ _Note:_ This is an experiment in constrained poetry, and not a secure method to 
 
 ### dev
 
+To develop the site:
+
 ```sh
 npm i
 npm run dev
@@ -17,14 +19,33 @@ npm run dev
 
 ### build
 
-(currently does not work due to bug with Vite + Buffer, please help?)
+To build the site:
 
 ```sh
 npm run build
 ```
 
+Note the `wallet.js` has to be pre-build using `esbuild` due to a Vite bug with readable-stream. You can do this with the following:
+
+```sh
+npm run bundle-util
+```
+
+If you run into an error with `"path"` module you may need to make sure that `node_modules/libsodium-sumo/package.json` includes the following section before bundling this utility:
+
+```js
+  "browser": {
+    "fs": false,
+    "path": "path-browserify"
+  }
+```
+
+(Yes, it's clunky...)
+
 ### live demo
 
-(currently a bit broken until Vite problem is solved)
+:sparkles:
+
+You can see a live version of the app here:
 
 https://seed-poem-tool.netlify.app/

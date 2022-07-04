@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [svelte()],
   resolve: {
     alias: {
+      // "readable-stream": "vite-compatible-readable-stream",
       process: "process/browser",
       stream: "stream-browserify",
       zlib: "browserify-zlib",
@@ -18,7 +19,6 @@ export default defineConfig({
     global: "window",
     // "process.env": {},
   },
-
   // optimizeDeps: {
   // 	esbuildOptions: {
   // 		define: {
@@ -28,33 +28,10 @@ export default defineConfig({
   // 		// plugins: [esbuildCommonjs(['crypto-browserify'])],
   // 	},
   // },
-
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
     },
-    sourcemap: false,
-    minify: false,
-    rollupOptions: {
-      plugins: [
-        inject({
-          modules: { Buffer: ["buffer", "Buffer"] },
-        }),
-        {
-          name: "no-treeshake",
-          transform(_, id) {
-            if (id.includes("buffer")) {
-              return { moduleSideEffects: "no-treeshake" };
-            }
-            if (id.includes("stream")) {
-              return { moduleSideEffects: "no-treeshake" };
-            }
-            if (id.includes("browserify")) {
-              return { moduleSideEffects: "no-treeshake" };
-            }
-          },
-        },
-      ],
-    },
+    rollupOptions: {},
   },
 });
