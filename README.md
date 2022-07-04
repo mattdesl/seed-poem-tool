@@ -8,6 +8,18 @@ Each word in the poem must be present in the [fixed list of 2048 words](https://
 
 _Note:_ This is an experiment in constrained poetry, and not a secure method to store private keys.
 
+### default poem
+
+The default poem for the app is a 12-word haiku that is also a valid seed phrase:
+
+```sh
+caught under bamboo breeze
+gentle summer melody
+another moment someone will remember
+```
+
+This encodes to the Tezos wallet [tz1Poffo6xjvjBnPUrdUxWvJ76rhN6W39ZZf](https://tzkt.io/tz1Poffo6xjvjBnPUrdUxWvJ76rhN6W39ZZf/operations/) which was used temporarily to store _\[tap\]_—a visual poem, cryptographic puzzle, and non-fungible token. You can read more about it [in this thread](https://twitter.com/mattdesl/status/1540001119237275649).
+
 ### dev
 
 To develop the site:
